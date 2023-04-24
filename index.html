@@ -80,22 +80,22 @@
               <p class="card-text">Hotel ubicado en pleno centro de Barselona a 
                pocos
                metros de la playa. </p>
+               <button type="button" class="btn btn-outline-succes" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
             </div>
             <div>
-              <button class="btn btn-primary btn-reserva"> 
-                  <span class="oi oi-plus"></span>Reservar</button>
+               <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#reservar">Reservar</button>
             </div>
         </div>
         <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
            <img src="images/hotelba.jpg" class="card-img-top" alt="Responsive image">
            <div class="card-body">
-              <h5 class="card-title">Hotel Buenos Aires</h5> 
+              <h5 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Las primeras revervas cuentan con clases de tango gratis!">Hotel Buenos Aires</h5> 
               <h6 class="card-subtitle text-muted">Argentina</h6>
               <p class="card-text">Hotel ubicado en pleno centro. </p>
+              <button type="button" class="btn btn-outline-succes" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
            </div>
            <div>
-              <button class="btn btn-primary btn-reserva"> 
-                  <span class="oi oi-plus"></span>Reservar</button>
+              <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#reservar">Reservar</button>
            </div>
         </div>
         <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
@@ -104,10 +104,10 @@
               <h5 class="card-title">Hotel Lima</h5>
               <h6 class="card-subtitle text-muted">Peru</h6>
               <p class="card-text">Hotel ubicado en pleno centro. </p>
+              <button type="button" class="btn btn-outline-succes" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
            </div>
            <div> 
-              <button class="btn btn-primary btn-reserva"> 
-                  <span class="oi oi-plus"></span>Reservar</button>
+              <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#reservar">Reservar</button>
            </div>
         </div>
         <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
@@ -117,10 +117,10 @@
               <h6 class="card-subtitle text-muted">Brasil</h6>
               <p class="card-text">Hotel ubicado en pleno centro de Rio de Janeiro
                pocos metros de la playa. </p>
+               <button type="button" class="btn btn-outline-succes" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
            </div>
            <div> 
-              <button class="btn btn-primary btn-reserva"> 
-                  <span class="oi oi-plus"></span>Reservar</button>
+              <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#reservar">Reservar</button>
            </div>
         </div>
         <div class="card card-hotel d-flex flex-column justify-content-between ml-2"> 
@@ -128,11 +128,11 @@
            <div class="card-body">
               <h5 class="card-title">Hotel La Paz</h5>
               <h6 class="card-subtitle text-muted">Bolivia</h6>
-              <p class="card-text">Hotel ubicado en pleno centro. </p> 
+              <p class="card-text">Hotel ubicado en pleno centro. </p>
+              <button type="button" class="btn btn-outline-succes" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button> 
            </div>
-           <div>
-              <button class="btn btn-primary btn-reserva"> 
-                  <span class="oi oi-plus"></span>Reservar</button>
+           <div> 
+              <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#reservar">Reservar</button>
            </div>
         </div>
         <div class="card card-hotel d-flex flex-column justify-content-between ml-2"> 
@@ -140,11 +140,11 @@
            <div class="card-body">
               <h5 class="card-title">Hotel Madrid</h5>
               <h6 class="card-subtitle text-muted">España</h6>
-              <p class="card-text">Hotel ubicado en pleno centro. </p> 
+              <p class="card-text">Hotel ubicado en pleno centro. </p>
+              <button type="button" class="btn btn-outline-succes" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button> 
             </div>
             <div>
-              <button class="btn btn-primary btn-reserva"> 
-                  <span class="oi oi-plus"></span>Reservar</button>
+               <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#reservar">Reservar</button>
             </div>
         </div>
         <div class="card card-hotel d-flex flex-column justify-content-between ml-2">
@@ -153,14 +153,81 @@
               <h5 class="card-title">Hotel San Pablo</h5>
               <h6 class="card-subtitle text-muted">Brasil</h6>
               <p class="card-text">Hotel ubicado en pleno centro. </p>
+              <button type="button" class="btn btn-outline-succes" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
            </div> 
            <div>
-              <button class="btn btn-primary btn-reserva"> 
-                  <span class="oi oi-plus"></span>Reservar</button>
-           </div>
-        </div>
+              <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#reservar" data-bs-toggle="popover" title="Promociones" data-bs-content="consulta las promociones vigentes">Reservar</button>               
+          </div>
      </div>
-  </div>
+     <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document"> 
+         <div class="modal-content">
+          <div class="modal-header"> 
+            <h5 class="modal-title" id="exampleModalLabel">Contacto con el hotel</h5> 
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> 
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+           <form> 
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Tu email:</label> 
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="message-text" class="col-form-label">Mensaje:</label> 
+                <textarea class="form-control" id="message-text"></textarea>
+              </div>
+           </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Enviar</button>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    <div class="modal fade" id="reservar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+       <div class="modal-dialog" role="document"> 
+         <div class="modal-content">
+          <div class="modal-header"> 
+            <h5 class="modal-title" id="exampleModalLabel">Reserva tu Habitación en Nuestro Hotel</h5> 
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"> 
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+           <form> 
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Tu Nombre Completo:</label> 
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Cuantas Habitaciones:</label> 
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Para Cuantas Personas:</label> 
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Fecha Inicial de la reserva:</label> 
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+              <div class="form-group">
+                <label for="recipient-name" class="col-form-label">Fecha Final de la Reserva:</label> 
+                <input type="text" class="form-control" id="recipient-name">
+              </div>
+           </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Confirmar</button>
+          </div>
+        </div>
+      </div> 
+    </div>
+
+</div>
   
 <footer class="footer" >
   <div class="row"  >
@@ -193,6 +260,24 @@
   <script src="node_modules/jquery/dist/jquery.min.js"></script> 
   <script src="node_modules/popper.js/dist/popper.min.js"></script> 
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <script>
+      $(function(){
+          $('[data-toggle="tooltip"]').tooltip();
+          $('[data-toggle="popover"]').popover();
+
+       });
+     
+  </script>
+
+  <!--<script>
+  $(document).ready(function(){
+    $('[data-bs-toggle="tooltip"]').tooltip(); 
+    $('[data-bs-toggle="popover"]').popover(); 
+
+  });
+</script>-->
+
 
  </body>
 </html>
