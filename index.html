@@ -15,7 +15,7 @@
  <body>
    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
        <a class="navbar-brand" href="#">Hoteles</a>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarNavDropown" aria-expanded="false" aria-label="Toggle navigation">
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavDropown" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
        </button>
        <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -37,21 +37,32 @@
            <li class="breadcrumb-item active" aria-current="page">Home</li>
         </ol>
     </nav>
+    <div class="row">
+        <div class="col-sm-4" >
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#funciona" aria-expanded="false" aria-controls="multiCollapse1">¿Cómo funciona?</button>
+        </div>
+        <div class="col-sm-4" >
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#reserva" aria-expanded="false" aria-controls="multiCollapse2">¿Dónde puedo reservar?</button>
+        </div>
+        <div class="col-sm-4" >
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#pago" aria-expanded="false" aria-controls="multiCollapse3">¿Cómo pago?</button>
+        </div> 
+   </div>
    <div class="row">
-       <div class="col-sm-4">
+       <div class="col-sm-4 collapse multi-collapse" id="funciona">
            <p>
                  <h3>¿Cómo funciona?</h3>
                  <p>Buscá los hoteles de acuerdo a tu prefencia.</P>
            </p>
        </div>
-       <div class="col-sm-4">
+       <div class="col-sm-4 collapse multi-collapse" id="reserva">
            <p>
                  <h3>¿Dónde puedo reservar?</h3>
                   <p>Elegia la ciudad que te interese y luego 
                   realiză la reserva con tus datos.</p>
            </p>
        </div>
-       <div class="col-sm-4">
+       <div class="col-sm-4 collapse multi-collapse" id="pago">
            <p>
                   <h3>¿Cómo pago?</h3> 
                   <p>Utiliza tu tarjeta favorita.</p>
