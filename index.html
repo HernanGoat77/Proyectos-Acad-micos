@@ -102,7 +102,7 @@
               <p class="card-text">Hotel ubicado en pleno centro de Barselona a 
                pocos
                metros de la playa. </p>
-               <button type="button" class="btn btn-outline-succes" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
+               <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
             </div>
             <div>
                <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#reservar">Reservar</button>
@@ -114,7 +114,7 @@
               <h5 class="card-title" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Las primeras revervas cuentan con clases de tango gratis!">Hotel Buenos Aires</h5> 
               <h6 class="card-subtitle text-muted">Argentina</h6>
               <p class="card-text">Hotel ubicado en pleno centro. </p>
-              <button type="button" class="btn btn-outline-succes" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
            </div>
            <div>
               <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#reservar">Reservar</button>
@@ -126,7 +126,7 @@
               <h5 class="card-title">Hotel Lima</h5>
               <h6 class="card-subtitle text-muted">Peru</h6>
               <p class="card-text">Hotel ubicado en pleno centro. </p>
-              <button type="button" class="btn btn-outline-succes" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
            </div>
            <div> 
               <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#reservar">Reservar</button>
@@ -139,7 +139,7 @@
               <h6 class="card-subtitle text-muted">Brasil</h6>
               <p class="card-text">Hotel ubicado en pleno centro de Rio de Janeiro
                pocos metros de la playa. </p>
-               <button type="button" class="btn btn-outline-succes" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
+               <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
            </div>
            <div> 
               <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#reservar">Reservar</button>
@@ -151,7 +151,7 @@
               <h5 class="card-title">Hotel La Paz</h5>
               <h6 class="card-subtitle text-muted">Bolivia</h6>
               <p class="card-text">Hotel ubicado en pleno centro. </p>
-              <button type="button" class="btn btn-outline-succes" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button> 
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button> 
            </div>
            <div> 
               <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#reservar">Reservar</button>
@@ -163,7 +163,7 @@
               <h5 class="card-title">Hotel Madrid</h5>
               <h6 class="card-subtitle text-muted">España</h6>
               <p class="card-text">Hotel ubicado en pleno centro. </p>
-              <button type="button" class="btn btn-outline-succes" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button> 
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button> 
             </div>
             <div>
                <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#reservar">Reservar</button>
@@ -175,7 +175,7 @@
               <h5 class="card-title">Hotel San Pablo</h5>
               <h6 class="card-subtitle text-muted">Brasil</h6>
               <p class="card-text">Hotel ubicado en pleno centro. </p>
-              <button type="button" class="btn btn-outline-succes" data-bs-toggle="modal" data-bs-target="#contacto">Contacto</button>
+              <button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#contacto" id="contactoBtn">Contacto</button>
            </div> 
            <div>
               <button type="button" class="btn btn-primary btn-reserva" data-bs-toggle="modal" data-bs-target="#reservar" data-bs-toggle="popover" title="Promociones" data-bs-content="consulta las promociones vigentes">Reservar</button>               
@@ -291,18 +291,24 @@
               interval: 2000
           });
 
-       });
-     
-  </script>
+          $('#contactoBtn').on('show.bs.modal', function(e){
+             console.log('el modal contacto se esta mostrando')
 
-  <!--<script>
-  $(document).ready(function(){
-    $('[data-bs-toggle="tooltip"]').tooltip(); 
-    $('[data-bs-toggle="popover"]').popover(); 
+             $('#contactoBtn').removeClass('btn-outline-success')
+             $('#contactoBtn').addClass('btn-primary')
+             $('#contactoBtn').prop('disabled', true)
 
-  });
-</script>-->
-
-
+          });
+          $('#contactoBtn').on('show.bs.modal', function(e){
+             console.log('el modal contacto se mostró')
+          });
+          $('#contactoBtn').on('hide.bs.modal', function(e){
+             console.log('el modal contacto se oculta')
+          });
+          $('#contactoBtn').on('hiden.bs.modal', function(e){
+             console.log('el modal contacto se ocultó')
+          });
+       }); 
+  </script>>
  </body>
 </html>
