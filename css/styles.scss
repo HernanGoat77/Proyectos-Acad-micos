@@ -1,8 +1,8 @@
 $yellow: #f5c30f;
 
 @mixin margenes($top, $bottom){
-    margin-bottom: $top;
-    margin-top: $bottom;	
+      margin-top: $top;
+      margin-bottom: $bottom;
 }
 
 .jumbotron {
