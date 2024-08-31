@@ -1,1 +1,43 @@
-inicio de proyectos de guia de hoteles
+# Guía de Hoteles
+
+Este proyecto es una guía de hoteles desarrollada utilizando Bootstrap 4.
+
+## Descripción
+
+La Guía de Hoteles es una aplicación web que permite a los usuarios buscar, filtrar y obtener información detallada sobre diferentes hoteles. Incluye características como:
+
+- Listado de hoteles con información básica (nombre, ubicación, calificación, etc.)
+- Filtros para buscar hoteles por ubicación, precio, calificación, etc.
+- Página de detalles de cada hotel con información completa (fotos, servicios, tarifas, etc.)
+- Sección de reseñas y comentarios de los usuarios
+
+## Tecnologías utilizadas
+
+- HTML5
+- CSS3
+- Bootstrap 4
+- JavaScript
+- jQuery
+
+## Cómo usar
+
+1. Clona el repositorio en tu máquina local:
+https://github.com/HernanGoat77/Proyectos-Acad-micos.git
+2. Abre el archivo `index.html` en tu navegador web.
+3. Explora la guía de hoteles, utiliza los filtros y accede a los detalles de cada hotel.
+
+## Contribuir
+
+Si deseas contribuir a este proyecto, sigue estos pasos:
+
+1. Haz un fork del repositorio.
+2. Crea una nueva rama para tus cambios:
+git checkout -b feature/nueva-funcionalidad
+3. Realiza tus cambios y actualiza la documentación si es necesario.
+4. Envía tus cambios con un commit y push:
+git add . git commit -m "Agrega nueva funcionalidad" git push origin feature/nueva-funcionalidad
+5. Crea un pull request en el repositorio original.
+
+## Licencia
+
+Este proyecto se distribuye bajo la [Licencia MIT](LICENSE).
